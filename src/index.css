@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #071834;
+    --color-primary-light: #25406b;
+
+    --color-secondary-light: #81b2da;
+
+    --font-unal-sans: 'Ancizar Sans', sans-serif;
+    --font-google-sans: 'Google Sans', sans-serif;
+}
+
+@layer base {
+    body {
+        font-family: 'Google Sans', sans-serif;
+        background: radial-gradient(circle,rgba(22, 57, 104, 1) 0%, rgba(7, 24, 52, 1) 80%);
+        padding: 5rem 0;
+    }
+}
+
+@layer components {
+    .navigation {
+        -webkit-box-shadow: 0px -8px 19px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px -8px 19px -10px rgba(0,0,0,0.75);
+        background: radial-gradient(circle,rgba(22, 57, 104, 1) 0%, rgba(7, 24, 52, 1) 80%);
+    }
+
+    .separator {
+        @apply border-0 h-2 bg-linear-to-r from-[#445975] to-[#a9b5c6];
+    }
+
+    .header-background {
+        @apply z-[-5] absolute right-0 top-0 h-full xl:block hidden
+        mask-[linear-gradient(to_right,transparent_30%,black_70%)]
+        [-webkit-mask-image:linear-gradient(to_right,transparent_30%,black_70%)]
+        xl:mask-[linear-gradient(to_right,transparent_0%,black_40%)]
+        xl:[-webkit-mask-image:linear-gradient(to_right,transparent_0%,black_40%)];
+    }
+
+    .header-plumber {
+        @apply z-[-4] absolute right-56 bottom-0 xl:block hidden;
+    }
+
+    .button-shadow {
+        -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+        box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+    }
+
+    @media (width >= 64rem /* 1024px */) {
+        .divide-padding div:not(:last-child) {
+            @apply pr-8;
+        }
+    }
+
+    .main-list div {
+        @apply text-2xl text-white font-semibold flex flex-col justify-between items-center gap-1;
+    }
+    .main-list div:last-child {
+        @apply xl:flex-row max-xl:text-center;
+
+        p {
+            @apply max-w-46
+        }
+    }
+    .main-list-container {
+        background: radial-gradient(circle,rgba(36, 60, 91) 0%, rgba(2, 9, 25)  90%);
+    }
+    .main-separator {
+        @apply border-0 h-2 bg-linear-to-r from-[#071121] via-[#dce3e8] to-[#071121];
+    }
+}
