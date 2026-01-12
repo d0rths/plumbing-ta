@@ -8,7 +8,9 @@ const Button = ({type = "", classnames = "", children}) => {
 
   return (
     <a href=""
-       className={`button-shadow uppercase text-md xl:text-2xl text-white font-bold py-3 px-6 rounded-sm flex items-center justify-center flex-col ${typeClasses} ${classnames}`}>
+       className={`
+       button-shadow uppercase text-md xl:text-2xl text-white font-bold py-3 px-6 rounded-sm flex items-center justify-center flex-col ${typeClasses} ${classnames}
+       `}>
       {children}
     </a>
   );
