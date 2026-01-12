@@ -32,7 +32,7 @@
     }
 
     .header-background {
-        @apply z-[-5] absolute right-0 top-0 h-full xl:block hidden
+        @apply z-[-5] absolute right-0 top-0 h-full md:block hidden
         mask-[linear-gradient(to_right,transparent_30%,black_70%)]
         [-webkit-mask-image:linear-gradient(to_right,transparent_30%,black_70%)]
         xl:mask-[linear-gradient(to_right,transparent_0%,black_40%)]
@@ -40,7 +40,7 @@
     }
 
     .header-plumber {
-        @apply z-[-4] absolute right-56 bottom-0 xl:block hidden;
+        @apply z-[-4] absolute max-xl:right-24 max-xl:w-72 xl:right-56 bottom-0 md:block hidden;
     }
 
     .button-shadow {

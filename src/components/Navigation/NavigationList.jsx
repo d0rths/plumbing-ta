@@ -4,7 +4,7 @@ const NavigationList = () => {
   const navList = ["Home", "About Us", "Services", "Pricing"];
 
   return (
-    <div className="flex flex-row gap-6 text-white">
+    <div className="flex flex-col xl:flex-row gap-6 text-white">
       {navList.map((item, index) => (
         <div key={index} className="flex flex-row items-center gap-1 cursor-pointer">
           <p>{item}</p>

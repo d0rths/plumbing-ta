@@ -7,8 +7,8 @@ import Plumber from "@/assets/images/NicePng_worker-png_1138182.png";
 const Header = () => {
   return (
     <header className="w-full relative sm:py-20">
-      <div className="xl:mx-[8%] w-full">
-        <div className="flex flex-col max-w-2xl py-20 max-xl:mx-auto">
+      <div className="w-full">
+        <div className="flex flex-col max-w-2xl py-20 max-md:mx-auto">
           <HeaderTitle />
           <HeaderButtons />
         </div>
